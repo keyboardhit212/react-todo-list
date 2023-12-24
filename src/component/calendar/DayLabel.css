@@ -1,0 +1,9 @@
+.dayLabel {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100px;
+    height: 70px;
+    font-weight: bold;
+    color: #455A64;
+    /* border: 1px solid black; */
+}

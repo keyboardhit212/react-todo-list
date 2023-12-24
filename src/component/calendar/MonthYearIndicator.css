@@ -1,0 +1,38 @@
+.monthYearIndicator {
+    position: relative;
+    width: 400px;
+    height: 100px;
+    margin: 30px auto 0 auto;
+    color: #263238;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.monthLabel {
+    margin: 0 5px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.yearLabel {
+    margin: 0 5px;
+    font-size: 40px;
+}
+
+a {
+    font-size: 60px;
+    color: #263238;
+    text-decoration: none;
+}
+
+.previous {
+    position: absolute;
+    top: -10px;
+    left: 0px; 
+}
+
+.next {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+}

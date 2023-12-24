@@ -1,0 +1,50 @@
+.todo-form-container {
+    box-sizing: border-box;
+    display: block;
+    width: 550px;
+    height: 300px;
+    margin: 50px auto;
+    padding: 10px 20px;
+    /* border: 1px solid black; */
+    background: white;
+    border-radius: 10px/10px;
+}
+
+.todo-form-container button {
+    display: block;
+}
+
+.todo-form-container input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin: 10px 0;
+}
+
+.todo-form-container textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 150px;
+    margin: 10px 0;
+    resize: none;
+}
+
+.todo-form-container button {
+    float: right;
+}
+
+.todo-form-container 
+.close-btn {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 12px/12px;
+    font-weight: bold;
+}
+
+.close-btn:hover {
+    background: #E53935;
+}

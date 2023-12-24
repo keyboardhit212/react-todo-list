@@ -1,0 +1,21 @@
+.todolist {
+    box-sizing: content-box;
+    width: 400px;
+    min-height: 750px;
+    padding: 30px 15px 15px 15px;
+    /* border: 1px solid black; */
+    float: left;
+}
+
+.currentDateLabel,
+.dayOfTheWeekLabel {
+    display: block;
+    text-align: right;
+    font-size: 50px;
+    font-weight: bold;
+    color: #263238;
+}
+
+.dayOfTheWeekLabel {
+    font-size: 30px;
+}

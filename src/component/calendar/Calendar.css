@@ -1,0 +1,19 @@
+body {
+    background: white;
+}
+
+.calendar {
+    width: 900px;
+    min-height: 600px;
+    /* border: 1px solid black; */
+    float: left;
+    text-align: center;
+}
+
+.daysLabel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}

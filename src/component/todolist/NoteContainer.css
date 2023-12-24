@@ -1,0 +1,7 @@
+.noteContainer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 550px;
+    padding: 10px;
+    background: #9E9E9E;
+}
