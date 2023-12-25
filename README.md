@@ -12,4 +12,5 @@ This app uses IndexedDB which is built-in on most browsers.
 
 # Screenshots
 
-![image](https://github.com/keyboardhit212/react-todo-list/assets/136884319/2b7e93d0-ec68-482f-a0ae-da08b52d40e5)
+![Screenshot from 2023-12-25 22-36-55](https://github.com/keyboardhit212/react-todo-list/assets/136884319/186c6a4a-51ba-4c35-bde7-30f94604048b)
+
