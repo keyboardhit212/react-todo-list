@@ -21,7 +21,7 @@ export default class IndexedDB {
         }
     }
 
-    insert(objectStore, data) {
+    insert(data) {
         const request = indexedDB.open(this.dbName);
 
         request.onsuccess = (e) => {
@@ -40,7 +40,7 @@ export default class IndexedDB {
         }
     }
 
-    get(date) {
+    get(date, getHook) {
         const request = indexedDB.open(this.dbName);
 
         request.onsuccess = (e) => {
@@ -51,8 +51,8 @@ export default class IndexedDB {
 
             let query = name_idx.getAll(date);
 
-            query.onsuccess = (e) => {
-                console.log(query.result);
+            query.onsuccess = (e)  => {
+                getHook(query.result);
             }
 
             query.onerror = (e) => {

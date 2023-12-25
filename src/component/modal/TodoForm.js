@@ -13,9 +13,14 @@ export default class TodoForm extends Component {
 
     submitForm(e) {
         e.preventDefault();
-        // const db = new IndexedDB('TodoList', 'Notes');
-        // console.log(this.props.currentDate);
-        // console.log(e.target.note.value);
+        const db = new IndexedDB('TodoList', 'Notes');
+        const note = e.target.note.value;
+        const date = this.props.currentDate;
+        const entry = {
+            date: date.toString(),
+            note,
+        }
+        db.insert(entry);
         this.toggleModal();
     }
 
@@ -28,9 +33,9 @@ export default class TodoForm extends Component {
             <div className="todo-form-container">
                 <button className="close-btn" onClick={this.toggleModal}>x</button>
                 <h1>Note</h1>
-                <form>
+                <form onSubmit={this.submitForm}>
                     <textarea name="note" placeholder="Notes"></textarea>
-                    <button onClick={this.submitForm}>Submit</button>
+                    <input type="submit"/>
                 </form>
             </div>
         );

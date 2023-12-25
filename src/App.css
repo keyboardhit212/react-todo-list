@@ -2,6 +2,13 @@ body {
   background: white;
 }
 
+.App {
+  width: 1350px;
+  height: auto;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

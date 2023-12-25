@@ -4,11 +4,13 @@ import TodoList from './component/todolist/TodoList';
 import { useState } from 'react';
 import CustomDate from './classes/CustomDate';
 import TodoForm from './component/modal/TodoForm';
+import IndexedDB from './classes/IndexedDB';
 
 function App() {
 
   const [currentDate, updateSelectedDate] = useState(new CustomDate());
   const [isModalToggled, toggleModal] = useState(false);
+  new IndexedDB('TodoList', 'Notes');
 
   if (isModalToggled) {
     return (
