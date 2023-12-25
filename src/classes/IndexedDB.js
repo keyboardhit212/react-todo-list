@@ -1,9 +1,18 @@
 
 export default class IndexedDB {
 
+    static db = null;
+
+    static getInstance() {
+        if (this.db === null)
+            this.db = new IndexedDB("TodoList", "Notes");
+        return this.db; 
+    }
+
     constructor(dbName, objectStore) {
         this.dbName = dbName;
         this.objectStore = objectStore;
+        
         const request = indexedDB.open(dbName);
         
         request.onupgradeneeded = (e) => {
