@@ -1,5 +1,6 @@
 import { Component } from "react";
 import "./TodoForm.css";
+import IndexedDB from "../../classes/IndexedDB";
 // import DatabaseHelper from "../../classes/db/DatabaseHelper";
 
 export default class TodoForm extends Component {
@@ -12,8 +13,9 @@ export default class TodoForm extends Component {
 
     submitForm(e) {
         e.preventDefault();
-        console.log(this.props.currentDate);
-        console.log(e.target.note.value);
+        // const db = new IndexedDB('TodoList', 'Notes');
+        // console.log(this.props.currentDate);
+        // console.log(e.target.note.value);
         this.toggleModal();
     }
 
